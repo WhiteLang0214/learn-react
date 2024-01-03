@@ -1,0 +1,6 @@
+.layout {
+  height: calc(100% - 45px);
+  background-color: #f4f4f4;
+  display: flex;
+  overflow-y: auto;
+}
