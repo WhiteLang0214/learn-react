@@ -8,8 +8,8 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      name: "App父组件",
-      msg: "这是父组件中的信息"
+      name: "App父组件名称",
+      msg: "123"
     }
   }
 

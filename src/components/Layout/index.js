@@ -1,11 +1,21 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types' // 引入props校验
+
 import "./index.css";
 import Menu from "../Menu";
 import Container from "../Container";
 
 
-export default class Layout extends Component {
-  
+export class Layout extends Component {
+
+  constructor() {
+    super() 
+    this.state = {
+      name: "",
+      msg: ""
+    }
+  }
+
   onChangeMsg = (e) => {
     this.props.onUpdateMsg(e.target.value)
   }
@@ -32,3 +42,15 @@ export default class Layout extends Component {
   }
 }
 
+// 使用 prop-types 校验传递的参数
+Layout.propTypes = {
+  name: PropTypes.string,
+  msg: PropTypes.string.isRequired
+}
+
+Layout.defaultProps = {
+  name: "Layout名称",
+  msg: "Layout消息"
+}
+
+export default  Layout;
