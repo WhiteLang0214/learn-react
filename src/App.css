@@ -13,3 +13,10 @@ body {
 .App {
   height: 100%;
 }
+.App .demo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.App .demo>div {
+  width: 50%;
+}

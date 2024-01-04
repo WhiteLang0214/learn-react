@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
+// react 自带的 上下文api
+// 是个全局性的
 
-export class context extends Component {
-  render() {
-    return (
-      <div>
-        <h1>跨组件的传值：</h1>
-      </div>
-    )
-  }
-}
+const MainContext = React.createContext()
 
-export default context
+export default MainContext;

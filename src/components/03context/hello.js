@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
-import world from './world'
+import World from './world'
+import MainContext from './context'
 
 export class hello extends Component {
+
+  static contextType  =MainContext;
+  
   render() {
     return (
       <div>
         hello里引用world
-        <world />
+        Hello page<span style={{color: 'blue'}}>使用context</span> --- { this.context }
+        <World />
       </div>
     )
   }
