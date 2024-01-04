@@ -8,24 +8,22 @@ import Container from "../Container";
 
 export class Layout extends Component {
 
-  constructor() {
-    super() 
-    this.state = {
-      name: "",
-      msg: ""
-    }
-  }
-
   onChangeMsg = (e) => {
     this.props.onUpdateMsg(e.target.value)
   }
+
+  onChangeColor = (e) => {
+    this.props.onChangeColor(e.target.value)
+  }
+
   render() {
-    const { name: pName, msg: pMsg } = this.props.parentData;
+    const { name: pName, msg: pMsg, color: pColor } = this.props.parentData;
     
     return (
       <div className="layout">
       <Menu />
       <div>
+        <h1>父子组件的传值：</h1>
         <p>从父组件传递过来的消息:{ pName }</p>
         -----
         <p>从父组件传递过来的消息:{ pMsg }</p>
@@ -35,6 +33,8 @@ export class Layout extends Component {
           defaultValue={pMsg}
           placeholder="修改消息" 
           onChange={ this.onChangeMsg } />
+        <h1>子孙组件的传值-爸爸Layout：</h1>
+        <p style={{color: pColor, fontWeight: "bold", fontSize: "24px"}}>{pColor}</p>
         <Container {...this.props} />
       </div>
     </div>
