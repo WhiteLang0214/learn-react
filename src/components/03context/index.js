@@ -9,7 +9,7 @@ export class Main extends Component {
       <div>
         <h1>Context 传值</h1>
         main里引入hello
-        <MainContext.Provider value={"zhangsan"}>
+        <MainContext.Provider value={"章三"}>
           <Hello />
         </MainContext.Provider>
       </div>
