@@ -1,7 +1,11 @@
+import React, { Component } from 'react';
 import "./index.css";
 
-function Container() {
-  return <div className="container">container</div>
-}
+export default class Container extends Component {
 
-export default Container
+  render() {
+    return (
+      <div className="container">container{JSON.stringify(this.props)}</div>
+    )
+  }
+}
