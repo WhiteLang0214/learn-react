@@ -15,6 +15,7 @@ import ComponentEvent from "./components/07setState/componentEvent"
 import SetTimeout from "./components/07setState/setTimeout"
 import NativeEvent from "./components/07setState/nativeEvent"
 import ImmutableState from './components/08immutableState/immutableState';
+import Refindex from './components/09ref';
 
 class App extends Component {
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
           <SetTimeout />
           <NativeEvent />
           <ImmutableState />
+          <Refindex />
         </div>
         {/* <Layout /> */}
       </div>
