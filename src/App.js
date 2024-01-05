@@ -9,6 +9,12 @@ import LifeCycle from "./components/04lifeCycle";
 import Brother from "./components/05brothers";
 import ShouldComponentUpdate from './components/06repeatRender/02shouldComponentUpdate';
 import PureComponnet from './components/06repeatRender/03pureComponnet';
+import SetState from "./components/07setState";
+import SetState2 from "./components/07setState/lifeCycle"
+import ComponentEvent from "./components/07setState/componentEvent"
+import SetTimeout from "./components/07setState/setTimeout"
+import NativeEvent from "./components/07setState/nativeEvent"
+import ImmutableState from './components/08immutableState/immutableState';
 
 class App extends Component {
   render() {
@@ -23,6 +29,12 @@ class App extends Component {
           <Brother />
           <ShouldComponentUpdate />
           <PureComponnet />
+          <SetState />
+          <SetState2 />
+          <ComponentEvent />
+          <SetTimeout />
+          <NativeEvent />
+          <ImmutableState />
         </div>
         {/* <Layout /> */}
       </div>
