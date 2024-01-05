@@ -6,6 +6,7 @@ import Fzprops from "./components/01fzProps";
 import Fzsprops from "./components/02zsProps";
 import Context from "./components/03context";
 import LifeCycle from "./components/04lifeCycle";
+import Brother from "./components/05brothers";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Fzsprops />
           <Context />
           <LifeCycle />
+          <Brother />
         </div>
         {/* <Layout /> */}
       </div>
