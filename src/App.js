@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from "./components/Header";
-// import Layout from "./components/Layout";
+import Layout from "./components/Layout";
 import Fzprops from "./components/01fzProps";
 import Fzsprops from "./components/02zsProps";
 import Context from "./components/03context";
@@ -16,6 +16,11 @@ import SetTimeout from "./components/07setState/setTimeout"
 import NativeEvent from "./components/07setState/nativeEvent"
 import ImmutableState from './components/08immutableState/immutableState';
 import Refindex from './components/09ref';
+import HocComponentRegister from './components/10HOC/02HOCComponent/register';
+import HocComponentLogin from './components/10HOC/02HOCComponent/login';
+import HocComponentLogout from './components/10HOC/02HOCComponent/logout';
+import Propsindex from './components/10HOC/03UpProps';
+import Authindex from './components/10HOC/04HOCAuth';
 
 class App extends Component {
   render() {
@@ -37,6 +42,12 @@ class App extends Component {
           <NativeEvent />
           <ImmutableState />
           <Refindex />
+          <HocComponentRegister />
+          <HocComponentLogin />
+          <HocComponentLogout />
+          <Propsindex />
+          <Authindex />
+
         </div>
         {/* <Layout /> */}
       </div>
