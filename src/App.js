@@ -21,6 +21,12 @@ import HocComponentLogin from './components/10HOC/02HOCComponent/login';
 import HocComponentLogout from './components/10HOC/02HOCComponent/logout';
 import Propsindex from './components/10HOC/03UpProps';
 import Authindex from './components/10HOC/04HOCAuth';
+import Hooksindex from './components/11Hooks/02Hooks累加器';
+import HookindexClassAdd from './components/11Hooks/01Class累加器';
+import HookUseState from './components/11Hooks/useState';
+import HookMultiState from "./components/11Hooks/multiState";
+import HookPlexState from "./components/11Hooks/plexState";
+import HookUseStatefun from "./components/11Hooks/useStateFun"
 
 class App extends Component {
   render() {
@@ -47,6 +53,12 @@ class App extends Component {
           <HocComponentLogout />
           <Propsindex />
           <Authindex />
+          <Hooksindex />
+          <HookindexClassAdd />
+          <HookUseState />
+          <HookMultiState />
+          <HookPlexState />
+          <HookUseStatefun />
 
         </div>
         {/* <Layout /> */}
