@@ -27,7 +27,11 @@ import HookUseState from './components/11Hooks/useState';
 import HookMultiState from "./components/11Hooks/multiState";
 import HookPlexState from "./components/11Hooks/plexState";
 import HookUseStatefun from "./components/11Hooks/useStateFun"
-
+import HookUseEffectClass from "./components/11Hooks/useEffectClass";
+import HookUseEffectFun from "./components/11Hooks/useEffectFun";
+import HookUseEffectComponentChange from "./components/11Hooks/useEffectComponentChange";
+import HookClassClearSettimeout from "./components/11Hooks/classClearSettimeout";
+import HookUseEffectClearSettimeout from "./components/11Hooks/useEffectClearSettimeout"
 class App extends Component {
   render() {
     return (
@@ -59,6 +63,11 @@ class App extends Component {
           <HookMultiState />
           <HookPlexState />
           <HookUseStatefun />
+          <HookUseEffectClass />
+          <HookUseEffectFun />
+          <HookUseEffectComponentChange />
+          <HookClassClearSettimeout />
+          <HookUseEffectClearSettimeout />
 
         </div>
         {/* <Layout /> */}
